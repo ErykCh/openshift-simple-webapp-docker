@@ -4,19 +4,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "How are you!"
+    return "How are you!\n"
 
 @app.route('/how are you')
 def hello():
-    return 'I am good, how about you?'
+    return 'I am good, how about you?\n'
 
 @app.route('/check')
 def check():
-    return 'Verification in progress ...'
+    return 'Verification in progress ...\n'
 
 @app.route('/training')
 def training():
-    return 'Training in progress ...'
+    return 'Training in progress ...\n'
 
 if __name__ == "__main__":
     port = os.environ.get('FLASK_PORT') or 8080
