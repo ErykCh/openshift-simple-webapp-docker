@@ -15,7 +15,7 @@ def check():
     return 'Verification in progress ...'
 
 @app.route('/training')
-def check():
+def training():
     return 'Training in progress ...'
 
 if __name__ == "__main__":
