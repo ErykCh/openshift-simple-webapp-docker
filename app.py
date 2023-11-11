@@ -4,11 +4,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "Welcome!"
+    return "How are you!"
 
 @app.route('/how are you')
 def hello():
     return 'I am good, how about you?'
+
+@app.route('/check')
+def check():
+    return 'Verification in progress ...'
 
 if __name__ == "__main__":
     app.run()
